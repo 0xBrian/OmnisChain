@@ -38,7 +38,7 @@ OMN is a cryptocurrency to make the world a better place.
     - or if started from command line, ctrl+c or close the console window
 
   - UI Errors or Stacktraces?
-    - report on BitBucket
+    - report on https://github.com/LogicDEX/OmnisChain/issues
 
   - Permissions Denied?
     - no spaces and only latin characters in the path to the NRS installation directory
