@@ -17,7 +17,7 @@
 ----
 ## How does it work? ##
 
-### NRS (Nxt Reference Software) ###
+### NRS (OMN Reference Software) ###
 
   - client-server application
   - JavaFX UI on supported platforms
