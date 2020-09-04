@@ -23,6 +23,13 @@ OMN is a cryptocurrency to make the world a better place.
 
   - wait for the JavaFX wallet window to open
   - on platforms without JavaFX, open http://localhost:6969/ in a browser
+## PEERS ##
+  
+  - 3.21.128.242
+  - 3.134.88.130
+  - 54.229.57.95
+  - 13.115.69.112
+ 
 
 ----
 ## Compile it! ##
