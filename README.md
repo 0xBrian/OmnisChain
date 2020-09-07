@@ -1,67 +1,45 @@
-----
-# Welcome to OMN! #
+---
+description: Account control
+---
 
-----
-## What is OMN? ##
-OMN is a cryptocurrency to make the world a better place.
+# Initial page
 
-----
-## Get it! ##
 
-  - *dependencies*:
-    - *general* - Java 8
-    - *Ubuntu* - `http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html`
-    - *Debian* - `http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html`
-    - *FreeBSD* - `pkg install openjdk8`
 
-----
-## Run it! ##
+###  Description
 
-  - click on the OMN icon, or start from the command line:
-  - Unix: `./start.sh`
-  - Window: `run.bat`
+Any account can be restricted to only be allowed to issue phased transactions subject to a specific voting model. This is achieved by the account submitting a setPhasingOnly transaction using the setPhasingOnlyControl API. The getPhasingOnlyControl API can be used to retrieve the status of an account phasing control, and getAllPhasingOnlyControls to get all accounts subject to phasing control with their respective restrictions. The account control feature relies on the [Phasing](https://nxtdocs.jelurida.com/Phasing) feature.
 
-  - wait for the JavaFX wallet window to open
-  - on platforms without JavaFX, open http://localhost:6969/ in a browser
-## PEERS ##
-  
-  - 3.21.128.242
-  - 3.134.88.130
-  - 54.229.57.95
-  - 13.115.69.112
- 
+Phasing parameters which refer to transaction IDs must now use transaction full hashes instead, prefixed with the chain ID separated with ':'.
 
-----
-## Compile it! ##
+It is possible to refer to transactions on other chains when approving a phased transaction, or setting up a by-transaction phasing voting model. The controlMaxFees parameter when setting mandatory approval now accepts multiple values, each fee being prefixed with the child chain ID and ':', to indicate which child chain the limit applies to. If no max fee has been set for a child chain, there is no phasing transactions fees total limit on it for the controlled account. Currently the UI only supports setting max fee for the current chain.
 
-  - if necessary with: `./compile.sh`
-  - you need jdk-8 as well
+These features present some interesting account usage scenarios:
 
-----
-## Troubleshooting the NRS (OMN Reference Software) ##
+* Multi-signature account [\[1\]](https://nxtdocs.jelurida.com/Account_control#cite_note-1)
+* Tagging an account as a "savings" account, with no ability to send OMN
+* Using a locked account as an "escrow" account
+* limiting the ability to transfer assets, aliases or other entities from an account
 
-  - How to Stop the NRS Server?
-    - click on OMN Stop icon, or run `./stop.sh`
-    - or if started from command line, ctrl+c or close the console window
+### Setting Account Control
 
-  - UI Errors or Stacktraces?
-    - report on https://github.com/LogicDEX/OmnisChain/issues
+To set account control on your account, click on the "Account Balance" tile.![figure 1](.gitbook/assets/omn1.png)
 
-  - Permissions Denied?
-    - no spaces and only latin characters in the path to the NRS installation directory
-    - known jetty issue
+Then select the "Account Control" tab then click on the "Setup Mandatory Approval" link.![figure 2](.gitbook/assets/omn2.png)
 
-----
-## Further Reading ##
+This will will load the "Mandatory Approval" dialog.
 
-  - in this repository:
-    - USERS-GUIDE.md
-    - DEVELOPERS-GUIDE.md
-    - OPERATORS-GUIDE.md
-    - In the doc folder
+The rest of the parameters are explained using balloon text on the dialog. Use the same method to remove the account control from an account which is under account control, account control removal transaction is subject to the same account control restrictions.[![figure 3](.gitbook/assets/omn3.png)](https://nxtdocs.jelurida.com/File:Account.control.png)
 
-----
+### Using Account Control
 
-## License
-* This program is distributed under the terms of the Jelurida Public License version 1.1 for the Ardor Public Blockchain Platform.
+When creating a transaction from an account which is under account control. Additional widget appears on the transaction dialog. It allows the user to select the specific phasing height and links to the account control information.[![figure 4](https://nxtdocs.jelurida.com/images/thumb/b/bd/Account.control.on.create.transaction.png/600px-Account.control.on.create.transaction.png)](https://nxtdocs.jelurida.com/File:Account.control.on.create.transaction.png)
+
+Note: Some exchanges do not accept phased transactions. In such cases, the approach would be to transfer first into a non-controlled account \("Hot Wallet"\), and from there transfer to the exchange.
+
+1. [Jump up↑](https://nxtdocs.jelurida.com/Account_control#cite_ref-1) For a detailed step-by-step guide, you can have a look at [Use the Phasing Feature to Emulate Multisig Accounts in the NXT Platform](https://nxtdocs.jelurida.com/Use_the_Phasing_Feature_to_Emulate_Multisig_Accounts_in_the_NXT_Platform)
+
+[Category](https://nxtdocs.jelurida.com/Special:Categories): 
+
+* [Features](https://nxtdocs.jelurida.com/Category:Features)
 
