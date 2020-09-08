@@ -2,7 +2,7 @@
 description: Account control
 ---
 
-# Initial page
+# Account Control
 
 
 
