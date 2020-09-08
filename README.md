@@ -29,7 +29,7 @@ Then select the "Account Control" tab then click on the "Setup Mandatory Approva
 
 This will will load the "Mandatory Approval" dialog.
 
-The rest of the parameters are explained using balloon text on the dialog. Use the same method to remove the account control from an account which is under account control, account control removal transaction is subject to the same account control restrictions.[![figure 3](.gitbook/assets/omn3.png)](https://nxtdocs.jelurida.com/File:Account.control.png)
+The rest of the parameters are explained using balloon text on the dialog. Use the same method to remove the account control from an account which is under account control, account control removal transaction is subject to the same account control restrictions.![figure 3](.gitbook/assets/omn3.png)
 
 ### Using Account Control
 
