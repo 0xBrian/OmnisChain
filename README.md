@@ -37,5 +37,5 @@ When creating a transaction from an account which is under account control. Addi
 
 Note: Some exchanges do not accept phased transactions. In such cases, the approach would be to transfer first into a non-controlled account \("Hot Wallet"\), and from there transfer to the exchange.
 
-1. [Jump up↑](https://nxtdocs.jelurida.com/Account_control#cite_ref-1) For a detailed step-by-step guide, you can have a look at Use the [Phasing Feature to Emulate Multisig Accounts in the NXT Platform](https://app.gitbook.com/@thelogic1/s/omnis-chain/use-the-phasing-feature-to-emulate-multisig-accounts-in-the-omn-platform)
+1. For a detailed step-by-step guide, you can have a look at Use the [Phasing Feature to Emulate Multisig Accounts in the NXT Platform](https://app.gitbook.com/@thelogic1/s/omnis-chain/use-the-phasing-feature-to-emulate-multisig-accounts-in-the-omn-platform)
 
