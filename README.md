@@ -16,7 +16,7 @@ It is possible to refer to transactions on other chains when approving a phased 
 
 These features present some interesting account usage scenarios:
 
-* Multi-signature account [\[1\]](https://nxtdocs.jelurida.com/Account_control#cite_note-1)
+* Multi-signature account [\[1\]](https://app.gitbook.com/@thelogic1/s/omnis-chain/)
 * Tagging an account as a "savings" account, with no ability to send OMN
 * Using a locked account as an "escrow" account
 * limiting the ability to transfer assets, aliases or other entities from an account
