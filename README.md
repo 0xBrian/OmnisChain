@@ -1,16 +1,16 @@
-Welcome to Nxt!
-What is Nxt?
+Welcome to OMN!
+
+What is OMN?
+
 Nxt is a modern economic system based on cryptography and blockchain technology.
 
-With Nxt, you can manage and interact with
+With OMN, you can manage and interact with
 
 your assets
 your businesses
 your customers
 in such a way that no trusted third parties are required anymore.
 
-Get it!
-pre-packaged - https://www.jelurida.com/
 
 dependencies:
 
@@ -25,33 +25,30 @@ FreeBSD - pkg install openjdk8
 
 
 Run it!
-click on the Nxt icon, or start from the command line:
+click on the OMN icon, or start from the command line:
 Unix: ./start.sh
 Mac: ./run.command
 Window: run.bat
 
 wait for the JavaFX wallet window to open
 
-on platforms without JavaFX, open http://localhost:7876/ in a browser
+on platforms without JavaFX, open http://localhost:6969/ in a browser
+
 Compile it!
+
 if necessary with: ./compile.sh
 you need jdk-8 as well
+
 Improve it!
+
 we love pull requests
 we love issues (resolved ones actually ;-) )
 in any case, make sure you leave your ideas at BitBucket
 assist others on the issue tracker
 review existing code and pull requests
 cf. coding guidelines in DEVELOPERS-GUIDE.md
-Troubleshooting the NRS (Nxt Reference Software)
+Troubleshooting the NRS (OMN Reference Software)
 How to Stop the NRS Server?
 
-click on Nxt Stop icon, or run ./stop.sh
+click on OMN Stop icon, or run ./stop.sh
 or if started from command line, ctrl+c or close the console window
-UI Errors or Stacktraces?
-
-report on BitBucket
-Permissions Denied?
-
-no spaces and only latin characters in the path to the NRS installation directory
-known jetty issue
